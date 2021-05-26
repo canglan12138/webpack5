@@ -1,0 +1,65 @@
+{
+  "id": "2486606",
+  "name": "text1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "17883963",
+      "name": "刮胡刀",
+      "font_class": "guahudao",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "17883964",
+      "name": "叠好毛巾",
+      "font_class": "diehaomaojin",
+      "unicode": "e6ce",
+      "unicode_decimal": 59086
+    },
+    {
+      "icon_id": "17883965",
+      "name": "工具箱",
+      "font_class": "gongjuxiang",
+      "unicode": "e6cf",
+      "unicode_decimal": 59087
+    },
+    {
+      "icon_id": "17883966",
+      "name": "发卷",
+      "font_class": "fajuan",
+      "unicode": "e6d0",
+      "unicode_decimal": 59088
+    },
+    {
+      "icon_id": "18267904",
+      "name": "版权",
+      "font_class": "banquan",
+      "unicode": "e98b",
+      "unicode_decimal": 59787
+    },
+    {
+      "icon_id": "18267905",
+      "name": "安全隐私",
+      "font_class": "anquanyinsi",
+      "unicode": "e98c",
+      "unicode_decimal": 59788
+    },
+    {
+      "icon_id": "18267906",
+      "name": "底层架构",
+      "font_class": "dicengjiagou",
+      "unicode": "e98d",
+      "unicode_decimal": 59789
+    },
+    {
+      "icon_id": "18267907",
+      "name": "仓储仓库",
+      "font_class": "cangchucangku",
+      "unicode": "e98e",
+      "unicode_decimal": 59790
+    }
+  ]
+}

@@ -13,7 +13,7 @@ module.exports = {
     //输出文件名
     filename: 'bundle.js',
     //输出路径
-    path: path.resolve(__dirname,'build')
+    path: path.resolve(__dirname,'dist')
   },
 
   //3.loader配置
@@ -60,7 +60,15 @@ module.exports = {
         options: {
           esModule: false
         }
-      }
+      },
+      {
+        //打包其他资源
+        exclude: /\.(css|js|html|json|less|png|jpg)$/,
+        loader: 'file-loader',
+        options: {
+          name: 'img/[name].[hash:10].[ext]'
+        }
+      },
     ]
   },
 
@@ -68,12 +76,22 @@ module.exports = {
   plugins: [
       //默认创建空的html文件，自动引入打包输出的所有资源（JS/CSS）
     new HtmlWebpackPlugin({
-      //复制html文件的结构，打包出去
+      //指定html文件，复制html文件的结构，打包出去
       template: './src/index.html'
     })
   ],
 
   //5.模式
-  mode: 'development'
+  mode: 'development',
 
+  //开发服务器 devServer 自动化
+  devServer: {
+    //项目构建后的路径
+    contentBase: './dist',
+    //启动gzip压缩
+    compress: true,
+    port: 3000,
+    //自动打开浏览器
+    open: true
+  }
 }
