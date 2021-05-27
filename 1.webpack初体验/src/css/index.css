@@ -3,6 +3,7 @@
     height: 100px;
     background: url("../imgs/angular.jpg") no-repeat;
     background-size: 100% 100%;
+    backface-visibility: hidden;
 }
 
 #box2 {
@@ -17,5 +18,6 @@
     height: 100px;
     background: url("../imgs/react.png") no-repeat;
     background-size: 100% 100%;
+    display: flex;
 }
 
